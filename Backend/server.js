@@ -9,6 +9,7 @@ mongoose
   .connect(process.env.MONGOURL)
   .then(() => console.log("mongoose is connected...."))
   .catch((e) => {
+    console.log(e)
     console.log("mongose is not connected");
   });
 
